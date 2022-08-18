@@ -1,0 +1,37 @@
+*** How to run without Flask: (no user interface in browser)***
+
+(0) Check if you have Pillow==8.0.1 installed
+(see requirements.txt, other versions might work as well)
+(also see README for using a virtual environment if you like to keep your python installation clean)
+
+(1) Run the 995.py file with python 3 from terminal in rainalyzer directory:
+$ python3 995.py OR $ python 995.py (depending on your system)
+
+(2) .gif-Images are located in the 'static'-folder
+
+
+*** How to run using Flask and Python: ***
+
+(0) Open Terminal in project folder
+(1) Choose one of two options: (see installation instructions in README.md)
+
+Using venv:
+$ source env/bin/activate && export FLASK_APP=application.py && flask run
+
+Without venv:
+$ export FLASK_APP=application.py && flask run
+
+(2) Open browser with provided link
+
+How to quit:
+(0) In terminal window exit Flask server: [CTRL] + [C]
+(1) Quit browser window
+
+
+*** Cleanup: ***
+(0) In project folder delete \static\radar_OUT-***.gif files
+
+
+source env/bin/activate
+export FLASK_APP=application.py
+flask run

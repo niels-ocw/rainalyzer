@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- CS50 Final Project: "CS50: Rainalyzer" - Frontend UI -->
+<!-- Image as button? >> <input type="image"> -->
+
+<html lang="en">
+    <head>
+        <title>
+            CS50: Rainalyzer
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- https://favicon.io/emoji-favicons/cloud-with-rain/ -->
+        <link href="/static/favicon-32x32.png" rel="icon">
+		<link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <table>
+            <tr class="table_header">
+                <td>
+					<form action="/" method="post">
+						Last Hour: [-55min ... +00min]
+						<button class="buttons" type="submit" name="button_pressed" value="demo_pressed">Demo Mode</button>
+					</form>
+				</td>
+				<td>
+					<form action="/" method="post">
+						Next Hour: [+05min ... +60min]
+						<button class="buttons" type="submit" name="button_pressed" value="calculate_pressed">Live Mode</button>
+					</form>
+				</td>
+            </tr>
+            <tr>
+				<td style="vertical-align: top;">
+					<img src={{ image_current }} alt="Animated GIF image of Current Weather"/>
+				</td>
+				<td style="vertical-align: top;">
+					<img src={{ image_future }} alt="Animated GIF image of Future Weather"/>
+                </td>
+            </tr>
+			<tr class="footer">
+                <td>Source: <a href="https://www.knmi.nl/nederland-nu/weer/actueel-weer/neerslagradar">KNMI</a> <a href="https://www.knmi.nl/copyright">CC0</a></td>
+                <td>Source: Output from CS50 Final Project Assignment</td>
+            </tr>
+        </table>
+    </body>
+</html>
