@@ -1,5 +1,4 @@
 # Rainalyzer
-
 #### Description:
 Using Python and Flask a rainfall prediction for the next 60 minutes is calculated and displayed in a webbrowser. For the meteriological source input data see the link provided on the web-interface.
 
